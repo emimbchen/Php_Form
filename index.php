@@ -8,6 +8,10 @@
     <form action="form.php" method="post">
 First Name: <input type="text" name="firstname"><br>
 Last Name: <input type="text" name="lastname"><br>
+Gender:
+<input type="radio" name="gender" value="female">Female
+<input type="radio" name="gender" value="male">Male
+<br/>
 <input type="submit">
 </form>
 </body>

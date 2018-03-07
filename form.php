@@ -1,6 +1,14 @@
 <html>
 <body>
-Welcome <?php echo $_POST["lastname"]; ?><br>
-<?php echo $_POST["firstname"]." ". $_POST["lastname"];?>
+Welcome <?php
+$prefix = '';
+if ($_POST["gender"] === "female"){
+    $prefix = "Ms.";
+} if ($_POST["gender"] === "male") {
+    $prefix = "Mr.";
+}
+echo $prefix. " " . $_POST["firstname"]." ". $_POST["lastname"];
+?><br>
+
 </body>
 </html>
